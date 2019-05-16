@@ -1,0 +1,431 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("fonts/Gilroy-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("fonts/Gilroy-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  width: 320px;
+}
+
+* {
+  outline: none;
+}
+
+.circle {
+  width: 41px;
+  height: 41px;
+  border-radius: 25px;
+  background: #de1e25;
+  margin: 18px 0 0 15px;
+}
+
+.hands {
+  margin-top: 26px;
+  width: 320px;
+  height: 457px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("hands.jpg");
+  background-position: 90% 20%;
+  background-size: 200% 100%;
+}
+
+.blood {
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 25px;
+  color: #ffffff;
+  margin-left: 15px;
+  padding-top: 32px;
+}
+
+.title-blood {
+  font-family: Gilroy;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 29px;
+  color: #ffffff;
+  margin-top: 44px;
+  margin-left: 15px;
+}
+
+.for-email {
+  width: 290px;
+  height: 40px;
+  font-family: Gilroy;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  display: block;
+  margin-top: 65px;
+  margin-left: 15px;
+}
+
+#email {
+  width: 290px;
+  height: 36px;
+  background: #ffffff;
+  border-radius: 50px;
+  margin-top: 15px;
+  margin-left: 15px;
+  border: 0;
+  font-family: Gilroy;
+  font-size: 14px;
+  line-height: 24px;
+  text-indent: 20px;
+  color: #000000;
+}
+
+.button-send {
+  width: 111px;
+  height: 36px;
+  font-weight: bold;
+  background: #de1e25;
+  border-radius: 50px;
+  border: 0;
+  font-family: Gilroy;
+  font-size: 14px;
+  line-height: 25px;
+  color: #ffffff;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.social {
+  width: 290px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+.container-town {
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+.town {
+  font-family: Gilroy;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 34px;
+  color: #130c0e;
+}
+
+.town-info {
+  margin-top: 15px;
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 31px;
+  color: #130c0e;
+}
+
+.town-email {
+  color: red;
+}
+
+.town-time {
+  opacity: 0.6;
+}
+
+footer {
+  margin-top: 53px;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  .circle {
+    width: 106px;
+    height: 106px;
+    border-radius: 52px;
+    background: #de1e25;
+    margin: 22px 0 0 30px;
+  }
+
+  .hands {
+    margin-top: 26px;
+    width: 768px;
+    height: 689px;
+    background-position: 90% 45%;
+    background-size: 200% 150%;
+  }
+
+  .blood {
+    font-size: 22px;
+    line-height: 40px;
+    margin-left: 30px;
+    padding-top: 50px;
+  }
+
+  .title-blood {
+    font-size: 48px;
+    line-height: 58px;
+    margin-top: 122px;
+    margin-left: 30px;
+  }
+
+  .for-email {
+    width: 442px;
+    height: 59px;
+    font-size: 22px;
+    line-height: 38px;
+    display: block;
+    margin-top: 119px;
+    margin-left: 30px;
+  }
+
+  #email {
+    width: 345px;
+    height: 38px;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 18px;
+    line-height: 31px;
+  }
+
+  .button-send {
+    width: 148px;
+    height: 38px;
+    font-size: 18px;
+    line-height: 33px;
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+
+  .social {
+    width: 346px;
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  svg {
+    width: 46px;
+    height: 46px;
+  }
+
+  .container-all-towns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 700px;
+  }
+
+  .container-town {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  .town {
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .town-info {
+    margin-top: 18px;
+    font-size: 22px;
+    line-height: 38px;
+  }
+
+  footer {
+    margin-top: 53px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  body {
+    width: 1200px;
+    height: 657px;
+  }
+
+  .container {
+    display: inline;
+  }
+
+  .hands {
+    float: left;
+    margin: 0;
+    width: 555px;
+    height: 657px;
+    background-position: 85% 40%;
+    background-size: 350% 200%;
+  }
+
+  .blood {
+    font-size: 18px;
+    line-height: 33px;
+    margin-left: 30px;
+    padding-top: 178px;
+  }
+
+  .title-blood {
+    font-size: 36px;
+    line-height: 44px;
+    width: 375px;
+    margin-top: 23px;
+    margin-left: 30px;
+  }
+
+  .for-email {
+    width: 290px;
+    height: 40px;
+    margin-left: 30px;
+  }
+
+  #email {
+    width: 333px;
+    height: 38px;
+    margin-left: 30px;
+  }
+
+  .button-send {
+    width: 109px;
+    height: 38px;
+  }
+
+  .social {
+    width: 240px;
+    height: 36px;
+    margin-left: 30px;
+  }
+
+  .circle {
+    float: right;
+    width: 68px;
+    height: 68px;
+    border-radius: 34px;
+    margin-right: 517px;
+    margin-top: 59px;
+  }
+
+  .container-all-towns {
+    width: 645px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container-town {
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+
+  .town {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  .town-info {
+    margin-top: 18px;
+    font-size: 12px;
+    line-height: 21px;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1920px) {
+  body {
+    width: 1920px;
+    height: 1000px;
+  }
+
+  .container {
+    display: inline;
+  }
+
+  .hands {
+    float: left;
+    margin: 0;
+    width: 886px;
+    height: 1000px;
+    background-position: 85% 40%;
+    background-size: 230% 120%;
+  }
+
+  .blood {
+    font-size: 18px;
+    line-height: 33px;
+    margin-left: 188px;
+    padding-top: 310px;
+  }
+
+  .title-blood {
+    font-size: 44px;
+    line-height: 53px;
+    width: 458px;
+    margin-top: 40px;
+    margin-left: 188px;
+  }
+
+  .for-email {
+    width: 290px;
+    height: 40px;
+    margin-left: 188px;
+    margin-top: 97px;
+  }
+
+  #email {
+    width: 345px;
+    height: 38px;
+    margin-left: 188px;
+  }
+
+  .button-send {
+    width: 109px;
+    height: 38px;
+  }
+
+  .social {
+    width: 240px;
+    height: 36px;
+    margin-left: 188px;
+  }
+
+  .circle {
+    float: right;
+    width: 128px;
+    height: 128px;
+    border-radius: 64px;
+    margin-right: 817px;
+    margin-top: 83px;
+  }
+
+  .container-all-towns {
+    width: 791px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container-town {
+    margin: 100px 0 -20px 89px;
+  }
+
+  .town {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  .town-info {
+    margin-top: 18px;
+    font-size: 12px;
+    line-height: 21px;
+  }
+
+  footer {
+    display: none;
+  }
+}
