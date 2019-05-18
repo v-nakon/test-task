@@ -1,14 +1,22 @@
 @font-face {
   font-family: "Gilroy";
-  src: url("fonts/Gilroy-Bold.ttf");
-  font-weight: bold;
+  src: url("../fonts/Gilroy-Regular.eot");
+  src: local("Gilroy Regular"), local("Gilroy-Regular"),
+    url("../fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gilroy-Regular.woff") format("woff"),
+    url("../fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gilroy";
-  src: url("fonts/Gilroy-Regular.ttf");
-  font-weight: normal;
+  src: url("../fonts/Gilroy-Bold.eot");
+  src: local("Gilroy Bold"), local("Gilroy-Bold"),
+    url("../fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gilroy-Bold.woff") format("woff"),
+    url("../fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -34,7 +42,7 @@ body {
   width: 320px;
   height: 457px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("hands.jpg");
+    url("../images/hands.jpg");
   background-position: 90% 20%;
   background-size: 200% 100%;
 }
@@ -122,6 +130,10 @@ body {
   font-weight: bold;
   line-height: 34px;
   color: #130c0e;
+}
+
+p {
+  line-height: normal;
 }
 
 .town-info {
