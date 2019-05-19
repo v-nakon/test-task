@@ -21,8 +21,13 @@
 }
 
 body {
-  margin: 0;
-  width: 320px;
+  margin: auto;
+}
+
+.container {
+  margin: auto 0;
+  width: 100%;
+  max-width: 320px;
 }
 
 * {
@@ -152,11 +157,12 @@ p {
   opacity: 0.6;
 }
 
-footer {
-  margin-top: 53px;
-}
-
 @media only screen and (min-width: 321px) and (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 768px;
+  }
+
   .circle {
     width: 106px;
     height: 106px;
@@ -167,8 +173,8 @@ footer {
 
   .hands {
     margin-top: 26px;
-    width: 768px;
-    height: 689px;
+    width: 100%;
+    height: 100%;
     background-position: 90% 45%;
     background-size: 200% 150%;
   }
@@ -212,7 +218,7 @@ footer {
     font-size: 18px;
     line-height: 33px;
     margin-top: 30px;
-    margin-left: 15px;
+    margin-left: 30px;
   }
 
   .social {
@@ -220,8 +226,7 @@ footer {
     height: 46px;
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
-    margin-left: 30px;
+    margin: 30px 0 30px 30px;
   }
 
   svg {
@@ -233,7 +238,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 700px;
+    width: 100%;
   }
 
   .container-town {
@@ -251,10 +256,6 @@ footer {
     font-size: 22px;
     line-height: 38px;
   }
-
-  footer {
-    margin-top: 53px;
-  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
@@ -270,8 +271,8 @@ footer {
   .hands {
     float: left;
     margin: 0;
-    width: 555px;
-    height: 657px;
+    width: 45%;
+    height: 100%;
     background-position: 85% 40%;
     background-size: 350% 200%;
   }
@@ -324,7 +325,7 @@ footer {
   }
 
   .container-all-towns {
-    width: 645px;
+    width: 55%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -345,13 +346,9 @@ footer {
     font-size: 12px;
     line-height: 21px;
   }
-
-  footer {
-    display: none;
-  }
 }
 
-@media only screen and (min-width: 1201px) and (max-width: 1920px) {
+@media only screen and (min-width: 1201px) {
   body {
     width: 1920px;
     height: 1000px;
@@ -364,8 +361,8 @@ footer {
   .hands {
     float: left;
     margin: 0;
-    width: 886px;
-    height: 1000px;
+    width: 45%;
+    height: 100%;
     background-position: 85% 40%;
     background-size: 230% 120%;
   }
@@ -419,7 +416,7 @@ footer {
   }
 
   .container-all-towns {
-    width: 900px;
+    width: 55%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -438,9 +435,5 @@ footer {
     margin-top: 18px;
     font-size: 12px;
     line-height: 21px;
-  }
-
-  footer {
-    display: none;
   }
 }
