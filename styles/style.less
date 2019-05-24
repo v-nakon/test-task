@@ -1,28 +1,50 @@
 @font-face {
   font-family: "Gilroy";
   src: url("../fonts/Gilroy-Regular.eot");
-  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("../fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
+  src: local("Gilroy Regular"), local("Gilroy-Regular"),
+    url("../fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gilroy-Regular.woff") format("woff"),
+    url("../fonts/Gilroy-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Gilroy";
   src: url("../fonts/Gilroy-Bold.eot");
-  src: local("Gilroy Bold"), local("Gilroy-Bold"), url("../fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("truetype");
+  src: local("Gilroy Bold"), local("Gilroy-Bold"),
+    url("../fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gilroy-Bold.woff") format("woff"),
+    url("../fonts/Gilroy-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
+
+.fontBold() {
+  font-family: Gilroy;
+  font-weight: bold;
+}
+
+.fontNormal() {
+  font-family: Gilroy;
+}
+
+@mainImg: "../images/hands.jpg";
+
 body {
   margin: auto;
 }
+
 .container {
   margin: auto 0;
   width: 100%;
   max-width: 320px;
 }
+
 * {
   outline: none;
 }
+
 .circle {
   width: 41px;
   height: 41px;
@@ -30,34 +52,37 @@ body {
   background: #de1e25;
   margin: 18px 0 0 15px;
 }
+
 .hands {
   margin-top: 26px;
   width: 320px;
   height: 457px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hands.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(@mainImg);
   background-position: 90% 20%;
   background-size: 200% 100%;
 }
+
 .blood {
-  font-family: Gilroy;
-  font-weight: bold;
+  .fontBold;
   font-size: 14px;
   line-height: 25px;
   color: #ffffff;
   margin-left: 15px;
   padding-top: 32px;
 }
+
 .title-blood {
-  font-family: Gilroy;
-  font-weight: bold;
+  .fontBold;
   font-size: 24px;
   line-height: 29px;
   color: #ffffff;
   margin-top: 44px;
   margin-left: 15px;
 }
+
 .for-email {
-  font-family: Gilroy;
+  .fontNormal;
   width: 290px;
   height: 40px;
   font-size: 14px;
@@ -67,8 +92,9 @@ body {
   margin-top: 65px;
   margin-left: 15px;
 }
+
 #email {
-  font-family: Gilroy;
+  .fontNormal;
   width: 290px;
   height: 36px;
   background: #ffffff;
@@ -81,9 +107,9 @@ body {
   text-indent: 20px;
   color: #000000;
 }
+
 .button-send {
-  font-family: Gilroy;
-  font-weight: bold;
+  .fontBold;
   width: 111px;
   height: 36px;
   background: #de1e25;
@@ -95,6 +121,7 @@ body {
   margin-top: 15px;
   margin-left: 15px;
 }
+
 .social {
   width: 290px;
   height: 35px;
@@ -103,39 +130,46 @@ body {
   margin-top: 30px;
   margin-left: 15px;
 }
+
 .container-town {
   margin-top: 30px;
   margin-left: 15px;
   width: 285px;
 }
+
 .town {
-  font-family: Gilroy;
-  font-weight: bold;
+  .fontBold;
   font-size: 28px;
   line-height: 34px;
   color: #130c0e;
 }
+
 p {
   line-height: normal;
 }
+
 .town-info {
-  font-family: Gilroy;
+  .fontNormal;
   margin-top: 15px;
   font-size: 18px;
   line-height: 31px;
   color: #130c0e;
 }
+
 .town-email {
   color: red;
 }
+
 .town-time {
   opacity: 0.6;
 }
+
 @media only screen and (min-width: 321px) and (max-width: 768px) {
   .container {
     width: 100%;
     max-width: 768px;
   }
+
   .circle {
     width: 106px;
     height: 106px;
@@ -143,6 +177,7 @@ p {
     background: #de1e25;
     margin: 22px 0 0 30px;
   }
+
   .hands {
     margin-top: 26px;
     width: 100%;
@@ -150,18 +185,21 @@ p {
     background-position: 90% 45%;
     background-size: 200% 150%;
   }
+
   .blood {
     font-size: 22px;
     line-height: 40px;
     margin-left: 30px;
     padding-top: 50px;
   }
+
   .title-blood {
     font-size: 48px;
     line-height: 58px;
     margin-top: 122px;
     margin-left: 30px;
   }
+
   .for-email {
     width: 442px;
     height: 59px;
@@ -171,6 +209,7 @@ p {
     margin-top: 119px;
     margin-left: 30px;
   }
+
   #email {
     width: 345px;
     height: 38px;
@@ -179,6 +218,7 @@ p {
     font-size: 18px;
     line-height: 31px;
   }
+
   .button-send {
     width: 148px;
     height: 38px;
@@ -187,6 +227,7 @@ p {
     margin-top: 30px;
     margin-left: 30px;
   }
+
   .social {
     width: 346px;
     height: 46px;
@@ -194,38 +235,46 @@ p {
     justify-content: space-between;
     margin: 30px 0 30px 30px;
   }
+
   svg {
     width: 46px;
     height: 46px;
   }
+
   .container-all-towns {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
   }
+
   .container-town {
     margin-top: 30px;
     margin-left: 30px;
   }
+
   .town {
     font-size: 48px;
     line-height: 58px;
   }
+
   .town-info {
     margin-top: 18px;
     font-size: 22px;
     line-height: 38px;
   }
 }
+
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
   body {
     width: 1200px;
     height: 657px;
   }
+
   .container {
     display: inline;
   }
+
   .hands {
     float: left;
     margin: 0;
@@ -234,12 +283,14 @@ p {
     background-position: 85% 40%;
     background-size: 350% 200%;
   }
+
   .blood {
     font-size: 18px;
     line-height: 33px;
     margin-left: 30px;
     padding-top: 178px;
   }
+
   .title-blood {
     font-size: 36px;
     line-height: 44px;
@@ -247,25 +298,30 @@ p {
     margin-top: 23px;
     margin-left: 30px;
   }
+
   .for-email {
     width: 290px;
     height: 40px;
     margin-left: 30px;
   }
+
   #email {
     width: 333px;
     height: 38px;
     margin-left: 30px;
   }
+
   .button-send {
     width: 109px;
     height: 38px;
   }
+
   .social {
     width: 240px;
     height: 36px;
     margin-left: 30px;
   }
+
   .circle {
     float: right;
     width: 68px;
@@ -274,34 +330,41 @@ p {
     margin-right: 517px;
     margin-top: 59px;
   }
+
   .container-all-towns {
     width: 55%;
     display: flex;
     flex-wrap: wrap;
   }
+
   .container-town {
     margin-top: 50px;
     margin-left: 60px;
     width: 155px;
   }
+
   .town {
     font-size: 22px;
     line-height: 27px;
   }
+
   .town-info {
     margin-top: 18px;
     font-size: 12px;
     line-height: 21px;
   }
 }
+
 @media only screen and (min-width: 1201px) {
   body {
     width: 1920px;
     height: 1000px;
   }
+
   .container {
     display: inline;
   }
+
   .hands {
     float: left;
     margin: 0;
@@ -310,12 +373,14 @@ p {
     background-position: 85% 40%;
     background-size: 230% 120%;
   }
+
   .blood {
     font-size: 18px;
     line-height: 33px;
     margin-left: 188px;
     padding-top: 310px;
   }
+
   .title-blood {
     font-size: 44px;
     line-height: 53px;
@@ -323,26 +388,31 @@ p {
     margin-top: 40px;
     margin-left: 188px;
   }
+
   .for-email {
     width: 290px;
     height: 40px;
     margin-left: 188px;
     margin-top: 97px;
   }
+
   #email {
     width: 345px;
     height: 38px;
     margin-left: 188px;
   }
+
   .button-send {
     width: 109px;
     height: 38px;
   }
+
   .social {
     width: 240px;
     height: 36px;
     margin-left: 188px;
   }
+
   .circle {
     float: right;
     width: 128px;
@@ -351,19 +421,23 @@ p {
     margin-right: 817px;
     margin-top: 83px;
   }
+
   .container-all-towns {
     width: 55%;
     display: flex;
     flex-wrap: wrap;
   }
+
   .container-town {
     margin: 100px 0 -20px 89px;
     width: 200px;
   }
+
   .town {
     font-size: 22px;
     line-height: 27px;
   }
+
   .town-info {
     margin-top: 18px;
     font-size: 12px;
